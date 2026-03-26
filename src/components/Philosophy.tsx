@@ -6,8 +6,7 @@ export default function Philosophy() {
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink">
-            Arte, estética<br />
-            y ética
+            Mi filosofía
           </h2>
           <div className="section-divider" />
         </div>

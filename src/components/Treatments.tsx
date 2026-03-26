@@ -1,27 +1,52 @@
+const SyringeIcon = () => (
+  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 4.5l-15 15m0 0h4.5m-4.5 0v-4.5M15 3l6 6-1.5 1.5-6-6L15 3zM9 9l6 6" />
+  </svg>
+)
+
+const DropletIcon = () => (
+  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3C12 3 5 10.5 5 15a7 7 0 0014 0c0-4.5-7-12-7-12z" />
+  </svg>
+)
+
+const DiamondIcon = () => (
+  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 3h12l4 6-10 12L2 9l4-6z" />
+  </svg>
+)
+
+const LeafIcon = () => (
+  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 22C6 22 3 16 3 10c0-4 3-7 9-7 3 0 9 3 9 9 0 3-1.5 7.5-6 9.5" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 10c3 2 6 3 9 2" />
+  </svg>
+)
+
 const treatments = [
   {
-    id: '01',
+    icon: <SyringeIcon />,
     name: 'Toxina Botulínica',
     tagline: 'Movimiento natural, no congelado',
     description:
       'Aplicación precisa en frente, entrecejo y zona periocular para un resultado natural y armonioso. También indicado para bruxismo e hiperhidrosis.',
   },
   {
-    id: '02',
+    icon: <DropletIcon />,
     name: 'Ácido Hialurónico',
     tagline: 'Volumen, hidratación y contorno',
     description:
       'Rellenos faciales avanzados para labios, pómulos, mentón, rinomodelación, ojeras y surcos. Técnica de depósito profundo para resultados duraderos.',
   },
   {
-    id: '03',
+    icon: <DiamondIcon />,
     name: 'Radiesse & Sculptra',
     tagline: 'Tu colágeno, reactivado',
     description:
       'Bioestimuladores de colágeno para rejuvenecimiento progresivo y natural. Estimulan la producción propia del cuerpo para resultados que mejoran con el tiempo.',
   },
   {
-    id: '04',
+    icon: <LeafIcon />,
     name: 'PDRN & Exosomas',
     tagline: 'Regeneración de última generación',
     description:
@@ -38,13 +63,12 @@ export default function Treatments() {
           <div>
             <p className="font-sans text-sm tracking-widest uppercase text-gold mb-3">Tratamientos</p>
             <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink leading-tight">
-              Especializada en<br />
-              inyectables faciales
+              Tratamientos
             </h2>
             <div className="w-10 h-px bg-gold mt-5" />
           </div>
           <p className="font-sans text-base text-ink/50 max-w-xs leading-loose">
-            Técnicas avanzadas con productos de la más alta calidad para resultados naturales y personalizados.
+            Especializada en medicina estética con inyectables, ofrezco tratamientos personalizados utilizando las técnicas más avanzadas y productos de la más alta calidad.
           </p>
         </div>
 
@@ -52,12 +76,11 @@ export default function Treatments() {
         <div className="grid md:grid-cols-2 gap-px bg-gold/10">
           {treatments.map((t) => (
             <div
-              key={t.id}
-              className="bg-blush p-8 lg:p-10 flex flex-col gap-4 group hover:bg-cream transition-colors duration-300"
+              key={t.name}
+              className="bg-[#FBFAF9] p-8 lg:p-10 flex flex-col gap-4 group hover:bg-cream transition-colors duration-300"
             >
-              <div className="flex items-start justify-between">
-                <span className="font-sans text-5xl font-light text-gold/40 leading-none">{t.id}</span>
-                <div className="w-8 h-px bg-gold/30 mt-4 group-hover:w-16 transition-all duration-300" />
+              <div className="flex items-start">
+                {t.icon}
               </div>
               <div>
                 <h3 className="font-serif text-2xl font-light text-ink">{t.name}</h3>
