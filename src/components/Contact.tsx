@@ -47,9 +47,6 @@ export default function Contact() {
               >
                 Agendar ahora
               </a>
-              <p className="font-sans text-sm text-ink/40 text-center -mt-3">
-                Respuesta en menos de 24hs · Sin compromiso
-              </p>
             </div>
 
             {/* Contact links */}

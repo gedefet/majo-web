@@ -20,8 +20,8 @@ function App() {
         <Novedades />
         <Philosophy />
         <Reviews />
-        <Contact />
         <Redes />
+        <Contact />
       </main>
       <Footer />
     </div>
