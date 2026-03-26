@@ -14,8 +14,8 @@ export default function Hero() {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-nude/50" />
-      <div className="absolute inset-0 bg-cream/30" />
+      <div className="absolute inset-0 bg-nude/65" />
+      <div className="absolute inset-0 bg-cream/40" />
 
       {/* Content — centered */}
       <div className="relative z-10 flex flex-col items-center text-center gap-8 px-6 pt-20">
@@ -27,10 +27,10 @@ export default function Hero() {
 
         <div className="flex flex-col gap-4 max-w-lg">
           <p className="font-sans text-xl lg:text-2xl font-light text-ink/70 leading-loose">
-            Master Injector especializada en armonización facial natural.
+            Medicina estética especializada en inyectables.
           </p>
           <p className="font-sans text-xl lg:text-2xl font-light text-ink/70 leading-loose">
-            Equilibrio, autenticidad y precisión en cada tratamiento.
+            Equilibrio y autenticidad para realzar tu belleza natural en el corazón de Palermo.
           </p>
         </div>
 

@@ -98,7 +98,7 @@ export default function Treatments() {
         {/* CTA */}
         <div className="text-center mt-16">
           <p className="font-sans text-lg italic font-light text-ink/50 mb-6">
-            ¿No sabés qué tratamiento es para vos?
+            ¿Necesitas asesoramiento personalizado?
           </p>
           <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block">
             Agendar consulta

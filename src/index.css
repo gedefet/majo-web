@@ -72,6 +72,7 @@
 
   .btn-outline {
     @apply font-sans text-sm uppercase px-8 py-4 transition-colors duration-300 rounded-full;
+    background-color: #FAF9F8;
     border: 1px solid theme('colors.gold.DEFAULT');
     color: theme('colors.gold.DEFAULT');
     letter-spacing: theme('letterSpacing.ultra');
