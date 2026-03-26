@@ -40,19 +40,7 @@ export default function About() {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 gap-6 mt-4 pt-6 border-t border-cream-dark">
-              <div>
-                <p className="font-sans text-4xl font-light text-ink">95<span className="text-gold text-2xl">%</span></p>
-                <p className="font-sans text-sm tracking-wide uppercase text-ink/50 mt-1">De retorno de pacientes</p>
-              </div>
-              <div>
-                <p className="font-sans text-4xl font-light text-ink">500<span className="text-gold text-2xl">+</span></p>
-                <p className="font-sans text-sm tracking-wide uppercase text-ink/50 mt-1">Pacientes satisfechas</p>
-              </div>
-            </div>
-
-            <a href="#contacto" className="btn-primary self-start mt-2">
+            <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary self-start mt-2">
               Agendar consulta
             </a>
           </div>

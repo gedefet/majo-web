@@ -54,7 +54,7 @@ export default function Reviews() {
               <p className="font-sans text-sm text-ink/50 tracking-wide">Basado en</p>
               <p className="font-sans text-sm text-ink/50 tracking-wide">reseñas de Google</p>
               <a
-                href="https://g.co/kgs/example"
+                href="https://www.google.com/search?q=dra+majo+toledo+maps&rlz=1C1ONGR_esAR1178AR1178&oq=dra+majo+toledo+maps&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI2MDdqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x95bccb7a8a368e21:0xaae558e94082288b,1,,,,"
                 className="font-sans text-sm text-gold hover:text-gold-dark transition-colors mt-1 inline-block tracking-wide"
                 target="_blank"
                 rel="noopener noreferrer"

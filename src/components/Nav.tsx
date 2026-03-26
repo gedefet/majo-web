@@ -4,7 +4,7 @@ const links = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Sobre mí', href: '#sobre-mi' },
   { label: 'Tratamientos', href: '#tratamientos' },
-  { label: 'Filosofía', href: '#filosofia' },
+  { label: 'Novedades', href: '#novedades' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
@@ -71,7 +71,9 @@ export default function Nav() {
           ))}
           <li>
             <a
-              href="#contacto"
+              href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768"
+              target="_blank"
+              rel="noopener noreferrer"
               className="font-sans text-xs tracking-widest uppercase px-6 py-3 bg-ink text-cream hover:bg-ink-light transition-colors duration-300"
             >
               Agendar consulta
