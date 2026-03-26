@@ -16,12 +16,8 @@ export default function Novedades() {
           <div className="relative bg-cream border border-gold/30 p-12 lg:p-16">
 
             {/* Badge / Cucarda */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-gold flex items-center justify-center z-10 shadow-lg">
-              <div className="w-[76px] h-[76px] rounded-full border border-cream/40 flex flex-col items-center justify-center text-center gap-0.5 px-1">
-                <span className="font-sans text-cream text-[7px] tracking-widest uppercase leading-none">Congreso</span>
-                <span className="font-serif text-cream text-xl font-light leading-none">2025</span>
-                <span className="font-sans text-cream text-[7px] tracking-widest uppercase leading-none">Masterhub</span>
-              </div>
+            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-cream border border-gold/30 flex items-center justify-center z-10 shadow-lg overflow-hidden">
+              <img src="/masterhub.png" alt="Masterhub" className="w-16 h-16 object-contain" />
             </div>
 
             {/* Corner ornaments */}
