@@ -7,27 +7,27 @@ export default function Footer() {
           {/* Brand */}
           <div className="flex flex-col gap-3">
             <div>
-              <p className="font-serif text-lg font-light text-cream">Dra. María José Toledo</p>
-              <p className="font-sans text-xs tracking-ultra uppercase text-gold mt-0.5">Master Injector</p>
+              <p className="font-sans text-base font-medium text-cream">Dra. María José Toledo</p>
+              <p className="font-sans text-sm tracking-widest uppercase text-gold mt-0.5">Master Injector</p>
             </div>
-            <p className="font-sans text-xs text-cream/40 leading-relaxed max-w-xs">
+            <p className="font-sans text-sm text-cream/40 leading-loose max-w-xs">
               Medicina estética especializada en inyectables faciales. Arte, estética y ética en cada tratamiento.
             </p>
           </div>
 
           {/* Contacto */}
           <div className="flex flex-col gap-2">
-            <p className="font-sans text-xs tracking-ultra uppercase text-gold mb-2">Contacto</p>
-            <p className="font-sans text-xs text-cream/50">Recoleta, Buenos Aires</p>
-            <p className="font-sans text-xs text-cream/50">+54 9 11 4099-6884</p>
-            <a href="https://instagram.com/dramajotoledo" className="font-sans text-xs text-cream/50 hover:text-gold transition-colors">@dramajotoledo</a>
+            <p className="font-sans text-sm tracking-widest uppercase text-gold mb-2">Contacto</p>
+            <p className="font-sans text-sm text-cream/50">Recoleta, Buenos Aires</p>
+            <p className="font-sans text-sm text-cream/50">+54 9 11 4099-6884</p>
+            <a href="https://instagram.com/dramajotoledo" className="font-sans text-sm text-cream/50 hover:text-gold transition-colors">@dramajotoledo</a>
           </div>
 
           {/* Tratamientos */}
           <div className="flex flex-col gap-2">
-            <p className="font-sans text-xs tracking-ultra uppercase text-gold mb-2">Tratamientos</p>
+            <p className="font-sans text-sm tracking-widest uppercase text-gold mb-2">Tratamientos</p>
             {['Toxina Botulínica', 'Ácido Hialurónico', 'Radiesse & Sculptra', 'PDRN & Exosomas'].map((t) => (
-              <a key={t} href="#tratamientos" className="font-sans text-xs text-cream/50 hover:text-gold transition-colors">
+              <a key={t} href="#tratamientos" className="font-sans text-sm text-cream/50 hover:text-gold transition-colors">
                 {t}
               </a>
             ))}
@@ -36,10 +36,10 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-2">
-          <p className="font-sans text-xs text-cream/30">
+          <p className="font-sans text-sm text-cream/30">
             © {new Date().getFullYear()} Dra. María José Toledo · Todos los derechos reservados
           </p>
-          <p className="font-sans text-xs text-cream/20">
+          <p className="font-sans text-sm text-cream/20">
             Recoleta · Buenos Aires · Argentina
           </p>
         </div>

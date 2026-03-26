@@ -46,16 +46,16 @@ export default function Reviews() {
           {/* Score */}
           <div className="flex items-center gap-4 bg-cream-dark px-8 py-5 self-start">
             <div>
-              <p className="font-serif text-5xl font-light text-ink">5.0</p>
+              <p className="font-sans text-5xl font-light text-ink">5.0</p>
               <Stars />
             </div>
             <div className="w-px h-12 bg-gold/30" />
             <div>
-              <p className="font-sans text-xs text-ink/50 tracking-wide uppercase">Basado en</p>
-              <p className="font-sans text-xs text-ink/50 tracking-wide uppercase">reseñas de Google</p>
+              <p className="font-sans text-sm text-ink/50 tracking-wide">Basado en</p>
+              <p className="font-sans text-sm text-ink/50 tracking-wide">reseñas de Google</p>
               <a
                 href="https://g.co/kgs/example"
-                className="font-sans text-xs text-gold hover:text-gold-dark transition-colors mt-1 inline-block tracking-wide"
+                className="font-sans text-sm text-gold hover:text-gold-dark transition-colors mt-1 inline-block tracking-wide"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -73,12 +73,12 @@ export default function Reviews() {
               className="flex flex-col gap-4 p-8 border border-cream-dark hover:border-gold/30 transition-colors duration-300"
             >
               <Stars />
-              <p className="font-serif text-base italic font-light text-ink/70 leading-relaxed flex-1">
+              <p className="font-sans text-base text-ink/70 leading-loose flex-1 italic">
                 "{r.text}"
               </p>
               <div className="pt-4 border-t border-cream-dark">
-                <p className="font-sans text-sm font-medium text-ink">{r.name}</p>
-                <p className="font-sans text-xs text-ink/40 mt-0.5">{r.time}</p>
+                <p className="font-sans text-base font-medium text-ink">{r.name}</p>
+                <p className="font-sans text-sm text-ink/40 mt-0.5">{r.time}</p>
               </div>
             </div>
           ))}
