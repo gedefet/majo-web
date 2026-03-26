@@ -30,7 +30,7 @@ function Stars() {
 
 export default function Reviews() {
   return (
-    <section className="py-24 lg:py-32 bg-cream">
+    <section className="py-24 lg:py-32 bg-[#FAF9F8]">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}

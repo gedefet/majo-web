@@ -22,8 +22,7 @@ export default function About() {
             <div>
               <p className="font-sans text-sm tracking-widest uppercase text-gold mb-3">Sobre mí</p>
               <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink leading-tight">
-                Una medicina<br />
-                con propósito
+                Sobre mí
               </h2>
               <div className="w-10 h-px bg-gold mt-5" />
             </div>

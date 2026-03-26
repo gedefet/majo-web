@@ -1,6 +1,10 @@
 const SyringeIcon = () => (
   <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 4.5l-15 15m0 0h4.5m-4.5 0v-4.5M15 3l6 6-1.5 1.5-6-6L15 3zM9 9l6 6" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.75L14.25 8.25M14.25 3.75L9.75 8.25" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6l6 6-8.5 8.5-1.5.5.5-1.5L14.5 11" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 20.25l3-3" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 15l-1.5 1.5" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.25 12.75l-1.5 1.5" />
   </svg>
 )
 
