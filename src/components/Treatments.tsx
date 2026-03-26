@@ -1,10 +1,11 @@
 const SyringeIcon = () => (
-  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.75 3.75L14.25 8.25M14.25 3.75L9.75 8.25" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6l6 6-8.5 8.5-1.5.5.5-1.5L14.5 11" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.75 20.25l3-3" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 15l-1.5 1.5" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.25 12.75l-1.5 1.5" />
+  <svg className="w-8 h-8 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17 3l4 4" />
+    <path d="M19 5L9 15" />
+    <path d="M11 7l2 2" />
+    <path d="M9 9l2 2" />
+    <path d="M7 13l-4 4 1 3 3 1 4-4" />
+    <path d="M3 21l2.5-2.5" />
   </svg>
 )
 
@@ -60,7 +61,7 @@ const treatments = [
 
 export default function Treatments() {
   return (
-    <section id="tratamientos" className="py-24 lg:py-32 bg-[#FBFAF9]">
+    <section id="tratamientos" className="py-16 lg:py-24 bg-[#FBFAF9]">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">

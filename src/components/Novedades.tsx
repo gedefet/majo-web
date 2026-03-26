@@ -1,9 +1,9 @@
 export default function Novedades() {
   return (
-    <section id="novedades" className="py-24 lg:py-32 bg-[#FBFAF9]">
+    <section id="novedades" className="py-10 lg:py-14 bg-[#FBFAF9]">
       <div className="max-w-6xl mx-auto px-6">
 
-        <div className="mb-16">
+        <div className="mb-8">
           <p className="font-sans text-sm tracking-widest uppercase text-gold mb-3">Novedades</p>
           <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink leading-tight">
             Formación continua

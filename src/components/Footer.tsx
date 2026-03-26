@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Contacto */}
           <div className="flex flex-col gap-2">
             <p className="font-sans text-sm tracking-widest uppercase text-gold mb-2">Contacto</p>
-            <p className="font-sans text-sm text-cream/50">Recoleta, Buenos Aires</p>
+            <p className="font-sans text-sm text-cream/50">Palermo, Buenos Aires</p>
             <p className="font-sans text-sm text-cream/50">+54 9 11 4099-6884</p>
             <a href="https://instagram.com/dramajotoledo" className="font-sans text-sm text-cream/50 hover:text-gold transition-colors">@dramajotoledo</a>
           </div>
@@ -40,7 +40,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Dra. María José Toledo · Todos los derechos reservados
           </p>
           <p className="font-sans text-sm text-cream/20">
-            Recoleta · Buenos Aires · Argentina
+            Palermo · Buenos Aires · Argentina
           </p>
         </div>
       </div>

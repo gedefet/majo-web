@@ -25,7 +25,7 @@ function PeopleIcon() {
 
 export default function Philosophy() {
   return (
-    <section id="filosofia" className="py-24 lg:py-32 bg-[#F7F2ED]">
+    <section id="filosofia" className="py-16 lg:py-24 bg-[#F7F2ED]">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
