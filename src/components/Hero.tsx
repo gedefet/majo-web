@@ -7,8 +7,8 @@ export default function Hero() {
       {/* Photo — full bleed background */}
       <div className="absolute inset-0">
         <img
-          src="/majo.png"
-          alt="Dra. María José Toledo"
+          src="/consultorio.jpeg"
+          alt="Consultorio Dra. María José Toledo"
           className="w-full h-full object-cover object-top"
         />
       </div>
