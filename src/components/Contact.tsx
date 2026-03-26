@@ -64,7 +64,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center">
                 <a
                   href="https://instagram.com/dramajotoledo"
                   target="_blank"

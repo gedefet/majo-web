@@ -29,7 +29,7 @@ export default function Philosophy() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink">
             Mi filosofía
           </h2>
@@ -65,7 +65,7 @@ export default function Philosophy() {
         </div>
 
         {/* Quote */}
-        <div className="mt-20 pt-16 border-t border-gold/20">
+        <div className="mt-10 pt-8 border-t border-gold/20">
           <div className="max-w-2xl mx-auto text-center">
             <span className="font-sans text-5xl text-gold/30 leading-none block mb-4">"</span>
             <blockquote className="font-sans text-xl lg:text-2xl font-light italic text-ink/70 leading-loose">

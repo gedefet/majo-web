@@ -34,18 +34,18 @@ export default function Reviews() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16">
+        <div className="flex flex-col items-center gap-6 mb-12 text-center">
           <div>
             <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink">
               Lo que dicen<br />
               mis pacientes
             </h2>
-            <div className="w-10 h-px bg-gold mt-5" />
+            <div className="w-10 h-px bg-gold mt-5 mx-auto" />
           </div>
 
           {/* Score */}
-          <div className="flex items-center gap-4 bg-cream-dark px-8 py-5 self-start">
-            <div>
+          <div className="flex items-center gap-4 bg-cream-dark px-8 py-5">
+            <div className="text-center">
               <p className="font-sans text-5xl font-light text-ink">5.0</p>
               <Stars />
             </div>
