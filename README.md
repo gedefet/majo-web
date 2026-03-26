@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# Dra. María José Toledo — Medicina Estética (Web Project)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, modern web application for **Dra. María José Toledo**, Master Injector specialized in natural facial harmonization in Recoleta, Buenos Aires.
 
-Currently, two official plugins are available:
+![Dra. Majo Toledo Logo](public/logo.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🏛️ Project Architecture
 
-## React Compiler
+This project is built using modern web standards to ensure high performance, SEO optimization, and a premium user experience:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Core**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- **Bundler**: [Vite](https://vite.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Typography**: 
+  - **Serif**: Cormorant Garamond
+  - **Sans**: PP Neue Montreal (Premium Custom Font)
+- **Palette**: A sophisticated "Nude & Gold" aesthetic (Cream, Gold, Ink, Blush).
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ✨ Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
+- **Micro-animations**: Smooth transitions and hover effects.
+- **SEO Optimized**: Semantic HTML and descriptive meta tags.
+- **Sectioned Layout**:
+  - `Hero`: High-impact landing with translucent overlays.
+  - `About`: Professional profile and philosophy.
+  - `Treatments`: Detailed aesthetic medicine services.
+  - `Philosophy`: Core values and medical approach.
+  - `Reviews`: Google Maps' patient feedback integration mockup.
+  - `Contact`: Direct booking and location info.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
+*Created with ❤️ by Antigravity*
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
