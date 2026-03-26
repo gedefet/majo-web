@@ -1,0 +1,83 @@
+const treatments = [
+  {
+    id: '01',
+    name: 'Toxina Botulínica',
+    tagline: 'Movimiento natural, no congelado',
+    description:
+      'Aplicación precisa en frente, entrecejo y zona periocular para un resultado natural y armonioso. También indicado para bruxismo e hiperhidrosis.',
+  },
+  {
+    id: '02',
+    name: 'Ácido Hialurónico',
+    tagline: 'Volumen, hidratación y contorno',
+    description:
+      'Rellenos faciales avanzados para labios, pómulos, mentón, rinomodelación, ojeras y surcos. Técnica de depósito profundo para resultados duraderos.',
+  },
+  {
+    id: '03',
+    name: 'Radiesse & Sculptra',
+    tagline: 'Tu colágeno, reactivado',
+    description:
+      'Bioestimuladores de colágeno para rejuvenecimiento progresivo y natural. Estimulan la producción propia del cuerpo para resultados que mejoran con el tiempo.',
+  },
+  {
+    id: '04',
+    name: 'PDRN & Exosomas',
+    tagline: 'Regeneración de última generación',
+    description:
+      'Medicina regenerativa avanzada para la reparación celular y mejora de la calidad de la piel. Tecnología de vanguardia para resultados visibles y duraderos.',
+  },
+]
+
+export default function Treatments() {
+  return (
+    <section id="tratamientos" className="py-24 lg:py-32 bg-blush">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
+          <div>
+            <p className="font-sans text-sm tracking-widest uppercase text-gold mb-3">Tratamientos</p>
+            <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink leading-tight">
+              Especializada en<br />
+              inyectables faciales
+            </h2>
+            <div className="w-10 h-px bg-gold mt-5" />
+          </div>
+          <p className="font-sans text-base text-ink/50 max-w-xs leading-loose">
+            Técnicas avanzadas con productos de la más alta calidad para resultados naturales y personalizados.
+          </p>
+        </div>
+
+        {/* Treatment cards */}
+        <div className="grid md:grid-cols-2 gap-px bg-gold/10">
+          {treatments.map((t) => (
+            <div
+              key={t.id}
+              className="bg-blush p-8 lg:p-10 flex flex-col gap-4 group hover:bg-cream transition-colors duration-300"
+            >
+              <div className="flex items-start justify-between">
+                <span className="font-sans text-5xl font-light text-gold/40 leading-none">{t.id}</span>
+                <div className="w-8 h-px bg-gold/30 mt-4 group-hover:w-16 transition-all duration-300" />
+              </div>
+              <div>
+                <h3 className="font-serif text-2xl font-light text-ink">{t.name}</h3>
+                <p className="font-sans text-sm text-gold mt-1">{t.tagline}</p>
+              </div>
+              <p className="font-sans text-base text-ink/60 leading-loose">{t.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-16">
+          <p className="font-sans text-lg italic font-light text-ink/50 mb-6">
+            ¿No sabés qué tratamiento es para vos?
+          </p>
+          <a href="#contacto" className="btn-primary inline-block">
+            Consulta personalizada gratuita
+          </a>
+        </div>
+      </div>
+    </section>
+  )
+}
