@@ -1,6 +1,6 @@
 export default function Novedades() {
   return (
-    <section id="novedades" className="py-24 lg:py-32 bg-blush">
+    <section id="novedades" className="py-24 lg:py-32 bg-[#FBFAF9]">
       <div className="max-w-6xl mx-auto px-6">
 
         <div className="mb-16">
@@ -11,63 +11,13 @@ export default function Novedades() {
           <div className="w-10 h-px bg-gold mt-5" />
         </div>
 
-        {/* Certificate */}
+        {/* Certificate image */}
         <div className="max-w-3xl mx-auto">
-          <div className="relative bg-cream border border-gold/30 p-12 lg:p-16">
-
-            {/* Badge / Cucarda */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-cream border border-gold/30 flex items-center justify-center z-10 shadow-lg overflow-hidden">
-              <img src="/masterhub.png" alt="Masterhub" className="w-16 h-16 object-contain" />
-            </div>
-
-            {/* Corner ornaments */}
-            <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-gold/50" />
-            <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-gold/50" />
-            <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-gold/50" />
-            <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-gold/50" />
-
-            {/* Inner border */}
-            <div className="border border-gold/15 p-8 lg:p-12 flex flex-col items-center text-center gap-8">
-
-              {/* Header */}
-              <div className="flex flex-col items-center gap-3">
-                <div className="flex items-center gap-4 w-full">
-                  <div className="flex-1 h-px bg-gold/30" />
-                  <span className="font-sans text-xs tracking-widest uppercase text-gold/70">Certificado de Participación</span>
-                  <div className="flex-1 h-px bg-gold/30" />
-                </div>
-              </div>
-
-              {/* Institution */}
-              <div className="flex flex-col items-center gap-2">
-                <h3 className="font-serif text-3xl lg:text-4xl font-light text-ink">
-                  Congreso Masterhub
-                </h3>
-                <p className="font-sans text-lg text-gold tracking-wide">Buenos Aires</p>
-              </div>
-
-              {/* Divider dot */}
-              <div className="w-1.5 h-1.5 rounded-full bg-gold/50" />
-
-              {/* Body */}
-              <div className="flex flex-col gap-4">
-                <p className="font-sans text-sm tracking-widest uppercase text-ink/40">Se certifica la participación de</p>
-                <p className="font-serif text-2xl lg:text-3xl font-light text-ink">
-                  Dra. María José Toledo
-                </p>
-                <p className="font-sans text-base text-ink/60 leading-loose max-w-md">
-                  Participación en el congreso internacional de medicina estética más importante del país.
-                </p>
-              </div>
-
-              {/* Date */}
-              <div className="flex flex-col items-center gap-2 mt-4">
-                <div className="w-16 h-px bg-gold/30" />
-                <p className="font-sans text-sm tracking-widest uppercase text-ink/40">Septiembre 2025</p>
-              </div>
-
-            </div>
-          </div>
+          <img
+            src="/certificado-masterhub.jpg"
+            alt="Certificado Congreso Masterhub – Buenos Aires, Septiembre 2025"
+            className="w-full h-auto shadow-md border border-gold/20"
+          />
         </div>
 
       </div>

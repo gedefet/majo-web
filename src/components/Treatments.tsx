@@ -31,7 +31,7 @@ const treatments = [
 
 export default function Treatments() {
   return (
-    <section id="tratamientos" className="py-24 lg:py-32 bg-blush">
+    <section id="tratamientos" className="py-24 lg:py-32 bg-[#FBFAF9]">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
