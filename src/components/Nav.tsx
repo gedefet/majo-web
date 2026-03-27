@@ -36,15 +36,15 @@ export default function Nav() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-[#FAF9F8]/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+        scrolled ? 'bg-[#1C1C1A]/98 backdrop-blur-sm shadow-sm' : 'bg-transparent'
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#inicio" className="flex items-center gap-3">
-          <img src="/logo.png" alt="Dra. María José Toledo" className="h-10 w-auto" />
+          <img src="/logo.png" alt="Dra. María José Toledo" className="h-10 w-auto invert" />
           <div className="hidden sm:flex flex-col leading-none">
-            <span className="font-sans text-base font-medium tracking-wide text-ink">
+            <span className="font-sans text-base font-medium tracking-wide text-cream">
               Dra. María José Toledo
             </span>
             <span className="font-sans text-xs tracking-widest uppercase text-gold mt-0.5">
@@ -61,8 +61,8 @@ export default function Nav() {
                 href={l.href}
                 className={`font-sans text-sm tracking-wide transition-colors duration-200 ${
                   activeSection === l.href.slice(1)
-                    ? 'text-ink'
-                    : 'text-ink/50 hover:text-ink'
+                    ? 'text-cream'
+                    : 'text-cream/50 hover:text-cream'
                 }`}
               >
                 {l.label}
@@ -74,7 +74,7 @@ export default function Nav() {
               href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-xs tracking-widest uppercase px-6 py-3 bg-ink text-cream hover:bg-ink-light transition-colors duration-300"
+              className="font-sans text-xs tracking-widest uppercase px-6 py-3 bg-cream/90 text-ink hover:bg-cream transition-colors duration-300"
             >
               Agendar consulta
             </a>
@@ -87,22 +87,22 @@ export default function Nav() {
           onClick={() => setOpen(!open)}
           aria-label="Menú"
         >
-          <span className={`block w-6 h-px bg-ink transition-all duration-300 ${open ? 'rotate-45 translate-y-2' : ''}`} />
-          <span className={`block w-6 h-px bg-ink transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
-          <span className={`block w-6 h-px bg-ink transition-all duration-300 ${open ? '-rotate-45 -translate-y-2' : ''}`} />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 ${open ? 'rotate-45 translate-y-2' : ''}`} />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 ${open ? 'opacity-0' : ''}`} />
+          <span className={`block w-6 h-px bg-cream transition-all duration-300 ${open ? '-rotate-45 -translate-y-2' : ''}`} />
         </button>
       </nav>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-cream border-t border-cream-dark">
+        <div className="md:hidden bg-[#1C1C1A] border-t border-cream/10">
           <ul className="flex flex-col py-4">
             {links.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block px-6 py-3 font-sans text-sm text-ink hover:bg-cream-dark transition-colors"
+                  className="block px-6 py-3 font-sans text-sm text-cream/70 hover:text-cream hover:bg-white/5 transition-colors"
                 >
                   {l.label}
                 </a>
