@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-cream/55" />
 
       {/* Content — centered */}
-      <div className="relative z-10 flex flex-col items-center text-center gap-8 px-6 pt-20 pb-24">
+      <div className="relative z-10 flex flex-col items-center text-center gap-6 px-6 pt-20 pb-10">
         <img
           src="/logo.png"
           alt="Dra. María José Toledo"
@@ -42,20 +42,20 @@ export default function Hero() {
             Ver tratamientos
           </a>
         </div>
-      </div>
 
-      {/* Scroll indicator */}
-      <a
-        href="#sobre-mi"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20"
-        aria-label="Ir a la siguiente sección"
-      >
-        <div className="w-9 h-9 rounded-full border border-ink/30 flex items-center justify-center bg-white/20 backdrop-blur-sm hover:bg-white/35 transition-colors">
-          <svg className="w-4 h-4 text-ink/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </a>
+        {/* Scroll indicator — inline so queda justo debajo de los botones */}
+        <a
+          href="#sobre-mi"
+          className="animate-bounce mt-2"
+          aria-label="Ir a la siguiente sección"
+        >
+          <div className="w-9 h-9 rounded-full border border-ink/30 flex items-center justify-center bg-white/20 backdrop-blur-sm hover:bg-white/35 transition-colors">
+            <svg className="w-4 h-4 text-ink/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </a>
+      </div>
     </section>
   )
 }
