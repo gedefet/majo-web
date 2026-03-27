@@ -10,9 +10,11 @@ export default function ImageBreak() {
       <div className="absolute inset-0 bg-ink/65" />
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center gap-5">
         <div className="w-10 h-px bg-gold/50" />
-        <p className="font-signature text-6xl lg:text-8xl text-cream/90 leading-none">
-          Dra. Majo Toledo
-        </p>
+        <img
+          src="/logo.png"
+          alt="Dra. María José Toledo"
+          className="h-32 lg:h-52 w-auto invert opacity-90"
+        />
         <p className="font-sans text-xs tracking-[0.3em] uppercase text-cream/45">
           Master Injector · Palermo, Buenos Aires
         </p>
