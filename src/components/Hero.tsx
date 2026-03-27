@@ -45,10 +45,12 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg className="w-6 h-6 text-ink/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
-        </svg>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20 flex flex-col items-center gap-1">
+        <div className="w-8 h-8 rounded-full border border-ink/30 flex items-center justify-center bg-white/20 backdrop-blur-sm">
+          <svg className="w-4 h-4 text-ink/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </div>
     </section>
   )
