@@ -32,7 +32,6 @@ export default {
       fontFamily: {
         serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans: ['"PP Neue Montreal"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
-        script: ['Parisienne', 'cursive'],
       },
       letterSpacing: {
         ultra: '0.25em',
