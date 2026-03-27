@@ -26,10 +26,10 @@ export default function Hero() {
         />
 
         <div className="flex flex-col gap-4 max-w-lg">
-          <p className="font-sans text-xl lg:text-2xl font-light text-ink/70 leading-loose">
+          <p className="font-serif italic text-xl lg:text-2xl font-light text-ink/70 leading-loose">
             Medicina estética especializada en inyectables.
           </p>
-          <p className="font-sans text-xl lg:text-2xl font-light text-ink/70 leading-loose">
+          <p className="font-serif italic text-xl lg:text-2xl font-light text-ink/70 leading-loose">
             Equilibrio y autenticidad para realzar tu belleza natural en el corazón de Palermo.
           </p>
         </div>

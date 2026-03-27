@@ -25,12 +25,15 @@ function PeopleIcon() {
 
 export default function Philosophy() {
   return (
-    <section id="filosofia" className="py-16 lg:py-24 bg-[#F7F2ED]">
+    <section id="filosofia" className="py-16 lg:py-24 bg-[#1C1C1A]">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink">
+          <span className="font-script text-3xl lg:text-4xl text-gold/70 block mb-3">
+            arte · estética · ética
+          </span>
+          <h2 className="font-serif text-4xl lg:text-5xl font-light text-cream">
             Mi filosofía
           </h2>
           <div className="section-divider" />
@@ -41,24 +44,24 @@ export default function Philosophy() {
 
           <div className="flex flex-col gap-4 p-8 lg:p-10 lg:pr-14">
             <HeartIcon />
-            <h3 className="font-serif text-2xl text-ink">Arte</h3>
-            <p className="font-sans text-base text-ink/60 leading-loose">
+            <h3 className="font-serif text-2xl text-cream">Arte</h3>
+            <p className="font-sans text-base text-cream/55 leading-loose">
               Cada rostro es una obra única. Mi trabajo es realzar la belleza natural respetando la armonía y las proporciones individuales de cada paciente.
             </p>
           </div>
 
           <div className="flex flex-col gap-4 p-8 lg:p-10 lg:px-14">
             <EyeIcon />
-            <h3 className="font-serif text-2xl text-ink">Estética</h3>
-            <p className="font-sans text-base text-ink/60 leading-loose">
+            <h3 className="font-serif text-2xl text-cream">Estética</h3>
+            <p className="font-sans text-base text-cream/55 leading-loose">
               La búsqueda de la belleza natural a través de técnicas precisas y productos de la más alta calidad, siempre con resultados sutiles y elegantes.
             </p>
           </div>
 
           <div className="flex flex-col gap-4 p-8 lg:p-10 lg:pl-14">
             <PeopleIcon />
-            <h3 className="font-serif text-2xl text-ink">Ética</h3>
-            <p className="font-sans text-base text-ink/60 leading-loose">
+            <h3 className="font-serif text-2xl text-cream">Ética</h3>
+            <p className="font-sans text-base text-cream/55 leading-loose">
               Transparencia, honestidad y seguridad son pilares fundamentales. Cada tratamiento se realiza con el máximo profesionalismo y cuidado hacia la paciente.
             </p>
           </div>
@@ -68,7 +71,7 @@ export default function Philosophy() {
         <div className="mt-10 pt-8 border-t border-gold/20">
           <div className="max-w-2xl mx-auto text-center">
             <span className="font-sans text-5xl text-gold/30 leading-none block mb-4">"</span>
-            <blockquote className="font-sans text-xl lg:text-2xl font-light italic text-ink/70 leading-loose">
+            <blockquote className="font-sans text-xl lg:text-2xl font-light italic text-cream/65 leading-loose">
               Mi compromiso es ayudarte a sentirte más segura y radiante, respetando tu identidad y realzando tu belleza natural con la máxima seguridad y profesionalismo.
             </blockquote>
             <p className="font-sans text-sm tracking-widest uppercase text-gold mt-6">
