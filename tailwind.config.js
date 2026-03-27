@@ -31,7 +31,8 @@ export default {
       },
       fontFamily: {
         signature: ['"Mr Sheffield"', 'cursive'],
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        serif: ['Anton', 'sans-serif'],
+        cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
         sans: ['"PP Neue Montreal"', '"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
       letterSpacing: {

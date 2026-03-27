@@ -30,7 +30,7 @@ export default function Philosophy() {
 
         {/* Header */}
         <div className="text-center mb-10">
-          <span className="font-serif italic font-light text-2xl lg:text-3xl text-gold/55 block mb-3">
+          <span className="font-cormorant italic font-light text-2xl lg:text-3xl text-gold/55 block mb-3">
             arte · estética · ética
           </span>
           <h2 className="font-serif text-4xl lg:text-5xl font-light text-cream">
