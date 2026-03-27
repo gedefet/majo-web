@@ -143,7 +143,7 @@ export default function Treatments() {
                 {t.icon}
               </div>
               <div>
-                <h3 className="font-serif text-2xl font-light text-ink">{t.name}</h3>
+                <h3 className="font-serif text-3xl lg:text-4xl font-light text-ink">{t.name}</h3>
                 <p className="font-sans text-sm text-gold mt-1">{t.tagline}</p>
               </div>
               <div className="font-sans text-base text-ink/60 leading-loose">{t.description}</div>

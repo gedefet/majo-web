@@ -39,6 +39,8 @@ export default function About() {
               </p>
             </div>
 
+            <p className="font-signature text-5xl text-ink/60 pt-1">Dra. Majo Toledo</p>
+
             <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary self-start mt-2">
               Agendar consulta
             </a>
