@@ -14,8 +14,8 @@ export default function Hero() {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-nude/65" />
-      <div className="absolute inset-0 bg-cream/40" />
+      <div className="absolute inset-0 bg-nude/80" />
+      <div className="absolute inset-0 bg-cream/55" />
 
       {/* Content — centered */}
       <div className="relative z-10 flex flex-col items-center text-center gap-8 px-6 pt-20">
