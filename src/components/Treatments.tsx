@@ -37,10 +37,22 @@ const SparkleIcon = () => (
   </svg>
 )
 
-const FlaskIcon = () => (
-  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3h6m-6 0v6l-4 9a1 1 0 00.9 1.45h12.2A1 1 0 0019 18l-4-9V3" />
-    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.5 16h7" />
+const IVDripIcon = () => (
+  <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round">
+    {/* Hook at top */}
+    <path d="M12 1v2" />
+    {/* IV bag */}
+    <path d="M8 3h8a1 1 0 011 1v5a3 3 0 01-3 3H10a3 3 0 01-3-3V4a1 1 0 011-1z" />
+    {/* liquid level line inside bag */}
+    <path d="M7.2 8h9.6" />
+    {/* tube from bag */}
+    <path d="M12 12v2" />
+    {/* drip chamber */}
+    <rect x="10" y="14" width="4" height="4" rx="0.5" />
+    {/* tube going down */}
+    <path d="M12 18v3" />
+    {/* drip drop */}
+    <circle cx="12" cy="22" r="0.6" fill="currentColor" stroke="none" />
   </svg>
 )
 
@@ -88,7 +100,7 @@ const treatments: Treatment[] = [
     ),
   },
   {
-    icon: <FlaskIcon />,
+    icon: <IVDripIcon />,
     name: 'Sueroterapia',
     tagline: 'Resultados desde adentro',
     description: (
