@@ -19,43 +19,71 @@ React 19 + TypeScript + Vite + Tailwind CSS v3. Single-page site, no router.
 
 ## Architecture
 
-`App.tsx` renders all sections in order: `Nav → Hero → About → Treatments → Philosophy → Reviews → Contact → Footer`. Each section is a standalone component in `src/components/`.
+`App.tsx` renders all sections in order:
+
+```
+Nav → Hero → About → Treatments → Philosophy → ImageBreak → Novedades → Reviews → Contact → Footer
+```
+
+Each section is a standalone component in `src/components/`.
 
 ### Design tokens — `tailwind.config.js`
 
-All colors are defined as semantic tokens. Changing hex values here propagates everywhere without touching components:
-
 | Token | Hex | Usage |
 |-------|-----|-------|
-| `cream` / `cream-dark` | `#f6f6f0` / `#ede9e3` | Main backgrounds |
+| `cream` / `cream-dark` | `#f6f6f0` / `#ede9e3` | Light section backgrounds |
 | `blush` / `blush-dark` | `#ece7e0` / `#e0d9d0` | Alternate section backgrounds |
-| `nude` | `#D4B9A6` | Hero overlay only |
-| `gold` | `#704c3a` | Accents, CTAs, small details |
-| `ink` | `#242424` | All text |
+| `nude` | `#D4B9A6` | Kept in config, unused |
+| `gold` | `#8C8C8C` | Accents, borders, small details |
+| `ink` | `#242424` | Body text |
+
+The dark chrome color `#1C1C1A` is used as an inline hardcoded value (not a token) in: Nav scrolled bg, Hero overlay, Philosophy bg, ImageBreak overlay, Footer bg.
 
 ### Typography
 
-Two fonts only — no exceptions:
-- **Cormorant Garamond** (serif): headings only (`h1`, `h2`, `h3`). Loaded via Google Fonts.
-- **PP Neue Montreal** (sans): everything else — body, labels, buttons, stats, quotes. Self-hosted via `@font-face` in `src/index.css`, files in `public/fonts/PP Neue Montreal - Free for Personal Use v2.6/OTF/`.
+Four fonts — all self-hosted in `public/fonts/` except Cormorant Garamond:
 
-The `h1, h2, h3, h4 { @apply font-serif }` rule in `src/index.css` handles headings globally. Explicitly add `font-sans` to any non-heading that might accidentally inherit serif.
+| Token | Font | File | Usage |
+|-------|------|------|-------|
+| `font-serif` | Anton | `Anton-Regular.ttf` | All headings h1–h4 (globally uppercase via CSS) |
+| `font-cormorant` | Cormorant Garamond | Google Fonts | Italic decorative accents only (Philosophy) |
+| `font-signature` | Mr Sheffield | `Mr Sheffield Regular.ttf` | Signature "Dra. Majo Toledo" in About + ImageBreak |
+| `font-sans` | PP Neue Montreal | `OTF/PPNeueMontreal-*.otf` | Everything else |
+
+The `h1, h2, h3, h4 { @apply font-serif uppercase; }` rule in `src/index.css` applies Anton + uppercase globally to all headings.
+
+Anton does not have italic — never use `font-serif italic`. Use `font-cormorant italic` for decorative italic text.
 
 ### Global styles — `src/index.css`
 
-Defines `.btn-primary` (brown rounded CTA: `#704c3a` bg, `#f6f6f0` text, `rounded-full`) and `.btn-outline` (brown border variant). Also `.section-divider` (short gold line used under headings).
+- `.btn-primary`: gray (`#8C8C8C`) bg, cream text, `rounded-full`, `tracking-ultra`
+- `.btn-outline`: `#FAF9F8` bg, gray border/text, `rounded-full`. Used in Hero on dark bg.
+- `.section-divider`: short gold (`#8C8C8C`) horizontal line, centered, used under headings.
 
-### Static assets
+### Static assets — `public/`
 
-`/public/` contains `logo.png`, `majo.png` (doctor photo), and the font folder. Vite serves these at the root path (`/logo.png`, `/majo.png`).
+| File | Usage |
+|------|-------|
+| `logo.png` | Dark/ink logo. Add `invert` class when on dark backgrounds (Nav, Hero, ImageBreak). |
+| `majo.png` | Doctor photo — used in About section |
+| `consultorio.jpeg` | Hero background (full-bleed) |
+| `sala.jpeg` | ImageBreak background (full-bleed) |
+| `certificado-masterhub.jpg` | Masterhub certificate shown in Novedades |
 
-### Nav scroll behavior
+### Nav behavior
 
-`Nav.tsx` uses two `useEffect`s: one for the scrolled/transparent state (triggers at 40px), and one `IntersectionObserver` to track the active section and highlight the corresponding nav link.
+- Transparent at top, `bg-[#1C1C1A]/98` when scrolled past 40px
+- Text is always `text-cream` (site has dark hero at top, dark nav when scrolled)
+- Logo always has `invert` class (logo.png is dark, needs to appear white)
+- `IntersectionObserver` tracks active section for link highlighting
 
 ### Color rules
 
-- `#242424` is text color only — never a background.
-- Dark sections use `bg-[#3A3A3A]` (footer only).
-- Hero uses `bg-nude/50` overlay over the full-bleed photo.
-- No split colors within a single text element (e.g., no `<span>` with a different color mid-heading).
+- `#1C1C1A` is the dark chrome color — used for Nav, Hero overlay, Philosophy section, ImageBreak overlay, Footer
+- `#242424` (ink) is body text only — never a background
+- Light sections use inline `bg-[#FAF9F8]`, `bg-[#F0EBE6]`, `bg-[#FBFAF9]`, `bg-[#F7F2ED]` etc.
+- No split colors within a single text element
+
+### Booking URL
+
+All CTAs point to: `https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768`

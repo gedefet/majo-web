@@ -1,51 +1,62 @@
-# Dra. María José Toledo — Medicina Estética (Web Project)
+# Dra. María José Toledo — Medicina Estética
 
-A premium, modern web application for **Dra. María José Toledo**, Master Injector specialized in natural facial harmonization in Recoleta, Buenos Aires.
+Web site for **Dra. María José Toledo**, Master Injector specialized in natural facial harmonization in Palermo, Buenos Aires.
 
-![Dra. Majo Toledo Logo](public/logo.png)
+Live: [majo-web.vercel.app](https://majo-web.vercel.app)
 
-## 🏛️ Project Architecture
+## Stack
 
-This project is built using modern web standards to ensure high performance, SEO optimization, and a premium user experience:
+- **Core**: React 19 + TypeScript
+- **Bundler**: Vite
+- **Styling**: Tailwind CSS v3
+- **Deployment**: Vercel (auto-deploy on push to `master` via GitHub `gedefet/majo-web`)
 
-- **Core**: [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
-- **Bundler**: [Vite](https://vite.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Typography**: 
-  - **Serif**: Cormorant Garamond
-  - **Sans**: PP Neue Montreal (Premium Custom Font)
-- **Palette**: A sophisticated "Nude & Gold" aesthetic (Cream, Gold, Ink, Blush).
+## Typography
 
-## 🚀 Getting Started
+All fonts are self-hosted in `public/fonts/` — no external font dependencies at runtime.
 
-1. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
+| Token | Font | Usage |
+|-------|------|-------|
+| `font-serif` | Anton | All headings (h1–h4), uppercase |
+| `font-cormorant` | Cormorant Garamond | Italic decorative accents only |
+| `font-signature` | Mr Sheffield | Signature "Dra. Majo Toledo" |
+| `font-sans` | PP Neue Montreal | Body, labels, buttons, everything else |
 
-2. **Run Development Server**:
-   ```bash
-   npm run dev
-   ```
+Cormorant Garamond is loaded via Google Fonts (italic variants only needed).
 
-3. **Build for Production**:
-   ```bash
-   npm run build
-   ```
+## Color palette
 
-## ✨ Features
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `cream` / `cream-dark` | `#f6f6f0` / `#ede9e3` | Light section backgrounds |
+| `blush` | `#ece7e0` | Alternate backgrounds |
+| `nude` | `#D4B9A6` | Unused (kept in config) |
+| `gold` | `#8C8C8C` | Accents, borders, CTAs |
+| `ink` | `#242424` | Body text |
 
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
-- **Micro-animations**: Smooth transitions and hover effects.
-- **SEO Optimized**: Semantic HTML and descriptive meta tags.
-- **Sectioned Layout**:
-  - `Hero`: High-impact landing with translucent overlays.
-  - `About`: Professional profile and philosophy.
-  - `Treatments`: Detailed aesthetic medicine services.
-  - `Philosophy`: Core values and medical approach.
-  - `Reviews`: Google Maps' patient feedback integration mockup.
-  - `Contact`: Direct booking and location info.
+Dark chrome color (`#1C1C1A`) is used inline in: Nav (scrolled), Hero overlay, Philosophy section, ImageBreak overlay, Footer.
 
----
-*Created with ❤️ by Antigravity*
+## Section order
 
+```
+Nav → Hero → About → Treatments → Philosophy → ImageBreak → Novedades → Reviews → Contact → Footer
+```
+
+- **Hero**: Full-bleed `consultorio.jpeg` with dark `#1C1C1A` overlay
+- **About**: Doctor profile + Mr Sheffield signature
+- **Treatments**: 6 treatments with inline SVG icons
+- **Philosophy**: Dark section (`#1C1C1A` bg) with three pillars
+- **ImageBreak**: Full-bleed `sala.jpeg` with logo overlay — purely atmospheric
+- **Novedades**: Masterhub certificate image
+- **Reviews**: 3 Google reviews + 5.0 score
+- **Contact**: Booking card, hours, social icons, Google Maps embed
+
+## Development
+
+```bash
+npm install
+npm run dev       # Vite dev server with HMR
+npm run build     # Production build → dist/
+npm run preview   # Preview production build
+npm run lint      # ESLint
+```
