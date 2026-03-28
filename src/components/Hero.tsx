@@ -15,10 +15,10 @@ export default function Hero() {
 
       {/* Marquee text — between photo and overlay, desktop only */}
       <div
-        className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none hidden lg:block opacity-60"
+        className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none hidden lg:block opacity-80"
         style={{
-          WebkitMaskImage: 'linear-gradient(to right, white 0%, white 42%, transparent 70%)',
-          maskImage: 'linear-gradient(to right, white 0%, white 42%, transparent 70%)',
+          WebkitMaskImage: 'linear-gradient(to right, white 0%, white 80%, transparent 98%)',
+          maskImage: 'linear-gradient(to right, white 0%, white 80%, transparent 98%)',
         }}
       >
         <div className="leading-none text-[110px] xl:text-[130px] text-white whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
