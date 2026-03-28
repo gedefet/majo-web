@@ -13,14 +13,8 @@ export default function Hero() {
         />
       </div>
 
-      {/* Marquee text — above overlays, masked to fade before reaching Majo */}
-      <div
-        className="absolute bottom-[18%] left-0 right-0 z-[5] overflow-hidden pointer-events-none select-none"
-        style={{
-          WebkitMaskImage: 'linear-gradient(to right, transparent 5%, white 28%, white 58%, transparent 82%)',
-          maskImage: 'linear-gradient(to right, transparent 5%, white 28%, white 58%, transparent 82%)',
-        }}
-      >
+      {/* Marquee text — between photo and overlay */}
+      <div className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none">
         <div className="leading-none text-[72px] lg:text-[110px] xl:text-[130px] text-white whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
           <div style={{ transform: 'translateX(-22%)' }}>
             MASTER INJECTOR · MEDICINA ESTÉTICA · MASTER INJECTOR · MEDICINA ESTÉTICA ·
