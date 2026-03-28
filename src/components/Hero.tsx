@@ -21,7 +21,7 @@ export default function Hero() {
           maskImage: 'linear-gradient(to right, transparent 5%, white 28%, white 58%, transparent 82%)',
         }}
       >
-        <div className="leading-none text-[72px] lg:text-[110px] xl:text-[130px] text-white/18 whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
+        <div className="leading-none text-[72px] lg:text-[110px] xl:text-[130px] text-white whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
           <div style={{ transform: 'translateX(-22%)' }}>
             MASTER INJECTOR · MEDICINA ESTÉTICA · MASTER INJECTOR · MEDICINA ESTÉTICA ·
           </div>
