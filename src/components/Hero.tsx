@@ -49,7 +49,7 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
             <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary whitespace-nowrap">
               Agendar consulta
             </a>
