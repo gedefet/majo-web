@@ -34,25 +34,25 @@ export default function Reviews() {
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="flex flex-col items-center gap-6 mb-12 text-center">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
           <div>
             <h2 className="font-serif text-4xl lg:text-5xl font-light text-ink">
               Lo que dicen<br />
               mis pacientes
             </h2>
-            <div className="w-10 h-px bg-gold mt-5 mx-auto" />
+            <div className="w-10 h-px bg-gold mt-5" />
           </div>
 
           {/* Score */}
-          <div className="flex items-center gap-4 bg-cream-dark px-8 py-5">
+          <div className="flex items-center gap-4 bg-[#1C1C1A] px-8 py-5 flex-shrink-0">
             <div className="text-center">
-              <p className="font-sans text-5xl font-light text-ink">5.0</p>
+              <p className="font-sans text-5xl font-light text-cream">5.0</p>
               <Stars />
             </div>
             <div className="w-px h-12 bg-gold/30" />
             <div>
-              <p className="font-sans text-sm text-ink/50 tracking-wide">Basado en</p>
-              <p className="font-sans text-sm text-ink/50 tracking-wide">reseñas de Google</p>
+              <p className="font-sans text-sm text-cream/50 tracking-wide">Basado en</p>
+              <p className="font-sans text-sm text-cream/50 tracking-wide">reseñas de Google</p>
               <a
                 href="https://www.google.com/search?q=dra+majo+toledo+maps&rlz=1C1ONGR_esAR1178AR1178&oq=dra+majo+toledo+maps&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI2MDdqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x95bccb7a8a368e21:0xaae558e94082288b,1,,,,"
                 className="font-sans text-sm text-gold hover:text-gold-dark transition-colors mt-1 inline-block tracking-wide"

@@ -9,7 +9,7 @@ export default function About() {
             <div className="absolute -top-4 -left-4 w-full h-full border border-gold/30" />
             <div className="relative bg-cream-dark aspect-[4/5] overflow-hidden">
               <img
-                src="/majo.png"
+                src="/majo5.jpeg"
                 alt="Dra. María José Toledo — Master Injector"
                 className="absolute inset-0 w-full h-full object-cover object-top"
               />

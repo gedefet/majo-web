@@ -13,10 +13,22 @@ export default function Hero() {
         />
       </div>
 
+      {/* Marquee text — sits between photo and overlay */}
+      <div className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none">
+        <div className="leading-none text-[72px] lg:text-[110px] xl:text-[130px] text-white/20 whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
+          <div style={{ transform: 'translateX(-22%)' }}>
+            MASTER INJECTOR · MEDICINA ESTÉTICA · MASTER INJECTOR · MEDICINA ESTÉTICA ·
+          </div>
+          <div>
+            MASTER INJECTOR · MEDICINA ESTÉTICA · MASTER INJECTOR · MEDICINA ESTÉTICA ·
+          </div>
+        </div>
+      </div>
+
       {/* Gradient overlay — dark left for text, fades right to show Majo */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1A] via-[#1C1C1A]/80 to-[#1C1C1A]/15" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-[#1C1C1A] via-[#1C1C1A]/80 to-[#1C1C1A]/15" />
       {/* Extra overlay on mobile where layout is full-width */}
-      <div className="absolute inset-0 bg-[#1C1C1A]/55 lg:hidden" />
+      <div className="absolute inset-0 z-[3] bg-[#1C1C1A]/55 lg:hidden" />
 
       {/* Content — left aligned */}
       <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pt-24 pb-10">
@@ -36,15 +48,14 @@ export default function Hero() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary">
+          <div className="flex flex-row gap-4">
+            <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary whitespace-nowrap">
               Agendar consulta
             </a>
-            <a href="#tratamientos" className="btn-outline">
+            <a href="#tratamientos" className="btn-outline whitespace-nowrap">
               Ver tratamientos
             </a>
           </div>
-
         </div>
       </div>
 
