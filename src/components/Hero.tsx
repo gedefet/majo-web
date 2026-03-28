@@ -14,7 +14,13 @@ export default function Hero() {
       </div>
 
       {/* Marquee text — between photo and overlay, desktop only */}
-      <div className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none hidden lg:block">
+      <div
+        className="absolute bottom-[18%] left-0 right-0 z-[1] overflow-hidden pointer-events-none select-none hidden lg:block opacity-40"
+        style={{
+          WebkitMaskImage: 'linear-gradient(to right, white 0%, white 42%, transparent 70%)',
+          maskImage: 'linear-gradient(to right, white 0%, white 42%, transparent 70%)',
+        }}
+      >
         <div className="leading-none text-[110px] xl:text-[130px] text-white whitespace-nowrap uppercase tracking-widest" style={{ fontFamily: "'Astor', 'Anton', sans-serif" }}>
           <div style={{ transform: 'translateX(-22%)' }}>
             MASTER INJECTOR · MEDICINA ESTÉTICA · MASTER INJECTOR · MEDICINA ESTÉTICA ·
