@@ -39,7 +39,7 @@ export default function Redes() {
           Descubrí resultados reales
         </h2>
         <p className="font-sans text-base text-cream/50 mt-3">
-          y entendé el criterio detrás de cada tratamiento
+          y el criterio detrás de cada tratamiento
         </p>
 
         {/* Social icons */}
