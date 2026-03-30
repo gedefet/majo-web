@@ -78,9 +78,9 @@ const treatments: Treatment[] = [
   },
   {
     icon: <DiamondIcon />,
-    name: 'Radiesse & Sculptra',
+    name: 'Bioestimuladores',
     tagline: 'Tu colágeno, reactivado',
-    description: 'Bioestimuladores de colágeno para rejuvenecimiento progresivo y natural. Estimulan la producción propia del cuerpo para resultados que mejoran con el tiempo.',
+    description: 'Radiesse, Sculptra, Facetem, Ellansé y HArmoniCa. Bioestimuladores de colágeno para rejuvenecimiento progresivo y natural. Estimulan la producción propia del cuerpo para resultados que mejoran con el tiempo.',
   },
   {
     icon: <LeafIcon />,

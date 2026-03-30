@@ -114,20 +114,20 @@ export default function Contact() {
               <div>
                 <p className="font-sans text-sm tracking-widest uppercase text-gold/70 mb-1">Ubicación</p>
                 <a
-                  href="https://maps.google.com/?q=Marcelo+Torcuato+de+Alvear+1966+Palermo+Buenos+Aires"
+                  href="https://maps.google.com/?q=Thames+2210+Palermo+Soho+Buenos+Aires"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-sans text-base text-ink/70 hover:text-ink transition-colors leading-relaxed"
                 >
-                  Marcelo Torcuato de Alvear 1966<br />
-                  Palermo, Buenos Aires
+                  Thames 2210<br />
+                  Palermo Soho, Buenos Aires
                 </a>
               </div>
             </div>
 
             <div className="w-full h-80 lg:h-full min-h-72 overflow-hidden border border-gold/20">
               <iframe
-                src="https://maps.google.com/maps?q=Marcelo+Torcuato+de+Alvear+1966+Palermo+Buenos+Aires+Argentina&output=embed"
+                src="https://maps.google.com/maps?q=Thames+2210+Palermo+Soho+Buenos+Aires+Argentina&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

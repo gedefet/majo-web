@@ -6,7 +6,7 @@ export default function Footer() {
 
           <div>
             <p className="font-sans text-sm font-medium text-cream">Dra. María José Toledo</p>
-            <p className="font-sans text-xs tracking-widest uppercase text-gold">Master Injector · Palermo, Buenos Aires</p>
+            <p className="font-sans text-xs tracking-widest uppercase text-gold">Master Injector · Palermo Soho, Buenos Aires</p>
           </div>
 
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 font-sans text-xs text-cream/50">
