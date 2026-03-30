@@ -108,7 +108,7 @@ const treatments: Treatment[] = [
         <p>No podés mejorar la piel sin mejorar lo que pasa adentro del cuerpo.</p>
         <p>La energía celular, la inflamación y el estrés se reflejan en cómo se ve tu piel.</p>
         <p>La sueroterapia actúa desde el interior para lograr resultados reales, visibles y sostenidos.</p>
-        <p className="text-ink/40 text-sm">Este tratamiento es realizado en conjunto con la Lic. en Hemoterapia Florencia Zalazar.</p>
+        <p className="text-ink/40 text-sm">Este tratamiento es realizado en conjunto con la Lic. Florencia Zalazar.</p>
       </div>
     ),
   },
