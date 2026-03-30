@@ -51,7 +51,7 @@ export default function Hero() {
           </h1>
 
           <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-relaxed max-w-xs lg:max-w-none">
-            Equilibrio y autenticidad<br className="lg:hidden" /> para realzar tu belleza natural
+            Equilibrio y autenticidad<br className="lg:hidden" /> para realzar<br className="hidden lg:inline" /> tu belleza natural
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
