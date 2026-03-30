@@ -6,6 +6,7 @@ import Philosophy from './components/Philosophy'
 import ImageBreak from './components/ImageBreak'
 import Novedades from './components/Novedades'
 import Reviews from './components/Reviews'
+import Redes from './components/Redes'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -21,6 +22,7 @@ function App() {
         <ImageBreak />
         <Novedades />
         <Reviews />
+        <Redes />
         <Contact />
       </main>
       <Footer />
