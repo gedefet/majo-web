@@ -46,14 +46,14 @@ export default function Hero() {
             className="h-40 lg:h-56 w-auto invert"
           />
 
-          <div className="flex flex-col gap-4 max-w-sm lg:max-w-none">
-            <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-loose">
-              Medicina estética especializada en inyectables.
-            </p>
-            <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-loose">
-              Equilibrio y autenticidad para realzar tu belleza natural en el corazón de Palermo.
-            </p>
-          </div>
+          {/* Mobile: MASTER INJECTOR heading */}
+          <h1 className="lg:hidden font-serif text-5xl sm:text-6xl text-cream leading-none">
+            Master<br />Injector
+          </h1>
+
+          <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-relaxed max-w-xs lg:max-w-none">
+            Equilibrio y autenticidad<br className="lg:hidden" /> para realzar tu belleza natural
+          </p>
 
           <div className="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
             <a href="https://dramariajosetoledo.site.agendapro.com/ar/sucursal/36768" target="_blank" rel="noopener noreferrer" className="btn-primary whitespace-nowrap">
@@ -67,17 +67,19 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator — centered at bottom */}
-      <a
-        href="#sobre-mi"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-10"
-        aria-label="Ir a la siguiente sección"
-      >
-        <div className="w-9 h-9 rounded-full border border-cream/30 flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
-          <svg className="w-4 h-4 text-cream/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </a>
+      <div className="absolute bottom-8 z-10 w-full flex justify-center">
+        <a
+          href="#sobre-mi"
+          className="animate-bounce"
+          aria-label="Ir a la siguiente sección"
+        >
+          <div className="w-9 h-9 rounded-full border border-cream/30 flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors">
+            <svg className="w-4 h-4 text-cream/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </a>
+      </div>
     </section>
   )
 }
