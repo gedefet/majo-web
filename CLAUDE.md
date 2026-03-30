@@ -22,7 +22,7 @@ React 19 + TypeScript + Vite + Tailwind CSS v3. Single-page site, no router.
 `App.tsx` renders all sections in order:
 
 ```
-Nav → Hero → About → Treatments → Philosophy → ImageBreak → Novedades → Reviews → Contact → Footer
+Nav → Hero → About → Treatments → Philosophy → ImageBreak → Novedades → Reviews → Redes → Contact → Footer
 ```
 
 Each section is a standalone component in `src/components/`.
@@ -37,7 +37,7 @@ Each section is a standalone component in `src/components/`.
 | `gold` | `#8C8C8C` | Accents, borders, small details |
 | `ink` | `#242424` | Body text |
 
-The dark chrome color `#1C1C1A` is used as an inline hardcoded value (not a token) in: Nav scrolled bg, Hero overlay, Philosophy bg, ImageBreak overlay, Footer bg.
+The dark chrome color `#1C1C1A` is used as an inline hardcoded value (not a token) in: Nav scrolled bg, Hero overlay, Philosophy bg, ImageBreak overlay, Redes bg, Footer bg.
 
 ### Typography
 
@@ -46,7 +46,7 @@ Four fonts — all self-hosted in `public/fonts/` except Cormorant Garamond:
 | Token | Font | File | Usage |
 |-------|------|------|-------|
 | `font-serif` | Anton | `Anton-Regular.ttf` | All headings h1–h4 (globally uppercase via CSS) |
-| `font-cormorant` | Cormorant Garamond | Google Fonts | Italic decorative accents only (Philosophy) |
+| `font-cormorant` | Cormorant Garamond | Google Fonts | Italic decorative accents only (Philosophy, Redes) |
 | `font-signature` | Mr Sheffield | `Mr Sheffield Regular.ttf` | Signature "Dra. Majo Toledo" in About + ImageBreak |
 | `font-sans` | PP Neue Montreal | `OTF/PPNeueMontreal-*.otf` | Everything else |
 
@@ -79,7 +79,7 @@ Anton does not have italic — never use `font-serif italic`. Use `font-cormoran
 
 ### Color rules
 
-- `#1C1C1A` is the dark chrome color — used for Nav, Hero overlay, Philosophy section, ImageBreak overlay, Footer
+- `#1C1C1A` is the dark chrome color — used for Nav, Hero overlay, Philosophy section, ImageBreak overlay, Redes section, Footer
 - `#242424` (ink) is body text only — never a background
 - Light sections use inline `bg-[#FAF9F8]`, `bg-[#F0EBE6]`, `bg-[#FBFAF9]`, `bg-[#F7F2ED]` etc.
 - No split colors within a single text element
