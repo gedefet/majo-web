@@ -46,9 +46,8 @@ export default function Hero() {
             className="h-40 lg:h-56 w-auto invert"
           />
 
-          {/* Mobile: MASTER INJECTOR heading */}
-          <h1 className="lg:hidden font-serif text-5xl sm:text-6xl text-cream leading-none">
-            Master<br />Injector
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-cream leading-none">
+            Master Injector
           </h1>
 
           <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-relaxed max-w-xs lg:max-w-none">
