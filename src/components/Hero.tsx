@@ -47,7 +47,7 @@ export default function Hero() {
           />
 
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl text-cream leading-none">
-            Master Injector
+            Master<br className="lg:hidden" /> Injector
           </h1>
 
           <p className="font-sans text-lg lg:text-2xl font-light text-cream/75 leading-relaxed max-w-xs lg:max-w-none">
